@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Question2</title>
+    <style>
+        .form{
+        background-color:black;
+        padding:10%;
+        height:60%;
+        width:70%;
+        }
+        .form-group{
+            padding-bottom: 10%;
+        }
+        input{
+            height:50px;
+            width:100%;
+            font-size: 15px;
+            text-indent: 10px;
+        }
+        button{
+            height: 30px;
+
+        }
+    </style>
+  </head>
+  <body>
+    <a href="Question1.html" target="_blank" rel="noopener noreferrer">Question-1</a>&nbsp;
+    <a href="Question2.html" target="_blank" rel="noopener noreferrer">Question-2</a>&nbsp;
+    <a href="Question3.html" target="_blank" rel="noopener noreferrer">Question-3</a>&nbsp;
+    <a href="Question4.html" target="_blank" rel="noopener noreferrer">Question-4</a>&nbsp;
+    <br><br>
+
+      <h3><pre> Question2 Create a webpage containing two input fields and a button
+
+                          A. Write something in the first input
+
+                          B. On click of the button, the content of input one should be copied in the second input
+      </pre></h3>
+      <br>
+
+    <div class="form">
+
+      <div class="form-group">
+        <input id="inputone" type="text" placeholder="First" />
+      </div>
+      <div class="form-group">
+        <input id="inputtwo" type="text" placeholder="Second" />
+      </div>
+
+      <button id="button" type="button">Display</button>
+    </div>
+
+    <script>
+
+      document.getElementById('button').onclick = function display(){
+        console.log("clicked")
+        let first = document.getElementById('inputone');
+        let second = document.getElementById('inputtwo');
+        second.value = first.value;
+      }
+
+    </script>
+
+  </body>
+</html>
