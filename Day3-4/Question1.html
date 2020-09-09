@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question1</title>
+<style>
+    button{
+        background-color: black;
+        margin: 20px;
+        padding: 30px;
+        font-size: 18px;
+        border-radius: 10px;
+        color:yellow;
+    }
+    button:hover{
+        color: blue;
+        background-color: white;
+    }
+</style>
+</head>
+<body>
+  <a href="Question1.html" target="_blank" rel="noopener noreferrer">Question-1</a>&nbsp;
+  <a href="Question2.html" target="_blank" rel="noopener noreferrer">Question-2</a>&nbsp;
+  <a href="Question3.html" target="_blank" rel="noopener noreferrer">Question-3</a>&nbsp;
+  <a href="Question4.html" target="_blank" rel="noopener noreferrer">Question-4</a>&nbsp;
+  <br><br>
+
+   <h3><pre> Question 1 Create a webpage containing an image and three buttons
+
+            A. On click of the second button a change the existing image to a new image
+
+            B. On click of the third button change it once again
+
+            C. On click of first, the first image should come back
+   </pre></h3><br>
+<img id="image" src="https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?cs=srgb&dl=pexels-c%C3%A1tia-matos-1072179.jpg&fm=jpg" alt="" srcset="" width="50%" height="50%">
+<br>
+<button onclick="first()" type="button">First Button</button>
+<button onclick="second()" type="button">Second Button</button>
+<button onclick="third()" type="button">Third Button</button>
+</body>
+
+  <script>
+
+      let img = document.getElementById('image')
+
+      function first(){
+        let img1 = "https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?cs=srgb&dl=pexels-c%C3%A1tia-matos-1072179.jpg&fm=jpg"
+        img.src = img1;
+        console.log("clicked")
+      }
+
+      function second(){
+        let img2 = "https://images.pexels.com/photos/3591558/pexels-photo-3591558.jpeg?cs=srgb&dl=pexels-tom%C3%A1%C5%A1-mal%C3%ADk-3591558.jpg&fm=jpg";
+        img.src = img2;
+        console.log("clicked");
+      }
+
+      function third(){
+        let img3 = "https://images.pexels.com/photos/3487823/pexels-photo-3487823.jpeg?cs=srgb&dl=pexels-beatriz-beltrame-3487823.jpg&fm=jpg"
+        img.src = img3;
+        console.log("clicked")
+      }
+
+
+  </script>
+</html>
