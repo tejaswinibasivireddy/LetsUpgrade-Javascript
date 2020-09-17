@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Question1</title>
+    <style>
+      *{
+        margin: 0px;
+        padding: 0px;
+      }
+      .data{
+        height: 500px;
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 10px;
+        padding: 5px;
+      }
+      .list{
+        margin-top: 20px;
+      }
+      input{
+        height: 30px;
+        text-indent: 10px;
+      }
+      .table{
+        width: 100%;
+        margin-top: 20px;
+      }
+      th,td{
+        height: 30px;
+        text-align: center;
+        padding: 5px;
+      }
+      button{
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <a href="Question1.html" target="_blank" rel="noopener noreferrer">Question-1</a>&nbsp;
+    <a href="Question2.html" target="_blank" rel="noopener noreferrer">Question-2</a>&nbsp;
+        <br><br>
+
+     <h3><pre> Question 1 Create a array containing five objects with properties { name, age, city, salary }
+
+               A. Display all the objects in a table
+
+               B. Create a search functionality for name and city
+
+               C. Delete button to delete records
+
+               D. Data is not permanent
+    </pre></h3><br>
+
+    <div class="data">
+
+    <div class="list">
+      <input type="text" placeholder="Search Name Here" id="searchname" onkeyup="searchByName()" />
+      <input type="text" placeholder="Search City Here" id="searchcity" onkeyup="searchByCity()" />
+    </div>
+
+    <table border="1" cellspacing=0 class="table">
+      <thead>
+        <tr>
+          <th>SNo</th>
+          <th>Name</th>
+          <th>Age</th>
+          <th>City</th>
+          <th>Salary</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="data"></tbody>
+    </table>
+  </div>
+
+    <script src="Question1.js"></script>
+  </body>
+</html>

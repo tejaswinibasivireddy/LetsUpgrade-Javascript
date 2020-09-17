@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Question2</title>
+    <style>
+      *{
+        margin: 0px;
+        padding: 0px;
+      }
+      .data{
+        height: 500px;
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 10px;
+        padding: 5px;
+      }
+      .bus{
+        margin-top: 20px;
+      }
+      input{
+        height: 30px;
+        text-indent: 5px;
+        padding: 5px;
+      }
+      button{
+        padding: 8px;
+      }
+      .table{
+        width: 100%;
+        margin-top: 20px;
+      }
+      th,td{
+        /*font-family: "seoge UI"*/
+        height: 30px;
+        text-align: center;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <a href="Question1.html" target="_blank" rel="noopener noreferrer">Question-1</a>&nbsp;
+    <a href="Question2.html" target="_blank" rel="noopener noreferrer">Question-2</a>&nbsp;
+        <br><br>
+
+     <h3><pre> Question 1 Create a blank array and later on create a bus functionality bus object contains {name, source, destination, number, passenger capacity}
+
+                A. A form to add new bus
+
+                B. Display data in table format
+
+                C. Search by source and destination
+
+                D. Data should be stored permanently in localstorage.
+    </pre></h3><br>
+
+    <div class="data">
+
+      <div class="bus">
+        <form id = "form" onsubmit="busData(event)">
+          <input type="text" required placeholder="Name" id="name" />
+          <input type="text" required placeholder="Source" id="source" />
+          <input type="text" required placeholder="Destination" id="desti" />
+          <input type="text" required placeholder="Number" id="num" />
+          <input type="number" required placeholder="Passenger Capacity" id="cap" />
+          <button type="submit">Add</button>
+        </form>
+      </div>
+
+      <div class="bus">
+        <input type="text" placeholder="Search Source Here" id="searchsource" onkeyup="searchBySource()" /> TO
+        <input type="text" placeholder="Search Destination  Here" id="searchdesti" onkeyup="searchByDesti()" />
+      </div>
+
+      <table border="1" cellspacing=0 class="table">
+        <thead>
+          <tr>
+            <th>SNo</th>
+            <th>Name</th>
+            <th>Source</th>
+            <th>Destination</th>
+            <th>Number</th>
+            <th>Passenger Capacity</th>
+          </tr>
+        </thead>
+        <tbody id="data"></tbody>
+      </table>
+  </div>
+
+    <script src="Question2.js"></script>
+  </body>
+</html>
