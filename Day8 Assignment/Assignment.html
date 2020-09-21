@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shopping Cart System</title>
+    <style>
+      *{
+        margin: 0px;
+        padding: 0px;
+      }
+      .header{
+        height: 70px;
+        width: 100%;
+        line-height: 70px;
+        background-color: lightgray;
+      }
+      h1{
+        margin-left: 50px;
+        display: inline-block;
+        width: 30%;
+        vertical-align: top;
+      }
+      .search{
+        height: 70px;
+        width: 60%;
+        display: inline-block;
+        <!-- background-color: #B0C4DE -->
+      }
+      .search input{
+        height: 40px;
+        width: 100%;
+        text-indent: 20px;
+        border-radius: 5px;
+        border: 1px solid gray;
+        outline: none;
+      }
+      .products{
+        width: 100%;
+        height: auto;
+        <!-- background-color: gray; -->
+      }
+      .productwrapper{
+        height: auto;
+        width: 80%;
+        margin-left: 10%;
+        margin-bottom: 50px;
+      }
+      .product{
+        height: auto;
+        width: 25%;
+        display: inline-block;
+        margin-top: 25px;
+        margin-left: 6.25%;
+        border: 1px solid lightgray;
+      }
+      .prodimg{
+        height: 300px;;
+        width: 100%;
+        overflow: hidden;
+      }
+      .product h3,.product p{
+        padding: 5px;
+        padding-left: 10px;
+      }
+      .product p{
+        color: gray
+      }
+      button{
+        padding: 10px;
+      }
+    </style>
+  <body>
+    <div class="header">
+      <h1>STorzY</h1>
+      <div class="search">
+        <input type="search" onkeyup="searchProduct(this.value)" placeholder="Search Products" />
+      </div>
+    </div>
+
+    <div class="products">
+       <div class="cartcount">
+          <h2>Apply Filter : </h2><input type="number" id="maximum" placeholder="MaximumPrice" value=""> &nbsp;
+          <input type="number" id="minimum" placeholder="MinimumPrice" value="">
+          <button type="submit" onclick="filter()">Filter</button>
+          <h2>Cart Product Count : <h2 id="cartCounts1"></h2></h2>
+    </div
+
+    <div class="products">
+      <div class="productwrapper" id="productwrapper"></div>
+    </div>
+
+    <div class="products">
+      <h1>Cart</h1>
+      <div class="productwrapper" id="cart"></div>
+    </div>
+
+    <script src="Assignment.js" charset="utf-8"></script>
+  </body>
+</html>
